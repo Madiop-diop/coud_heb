@@ -1,6 +1,3 @@
-</div>
-
-
 <div class="row footer-bottom">
 
     <div class="col-twelve">
@@ -15,7 +12,7 @@
     </div>
 
 </div> <!-- end footer-bottom -->
-
+</div>
 </footer> <!-- end footer -->
 
 </body>

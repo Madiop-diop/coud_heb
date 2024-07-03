@@ -12,15 +12,12 @@ include('activite.php');
         ?>
     </p>
 </section> <!-- end s-stats -->
-</div>
-</div> <!-- end row -->
-</section> <!-- end styles -->
 
 
 
 <!-- footer
-    ================================================== 
--->
+    ================================================== -->
+
 <footer>
     <div class="row">
         <div class="col-full">

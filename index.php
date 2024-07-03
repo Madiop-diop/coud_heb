@@ -3,7 +3,7 @@
 include('head.php');
 ?>
 <div class="col-eight tab-full contact__form1">
-    <form name="contactForm" id="contactForm" method="POST" action="profile.php">
+    <form name="contactForm" id="contactForm" method="POST" action="traitement.php">
 
         <tr>
             <td colspan="4">
@@ -12,17 +12,17 @@ include('head.php');
                 </center>
             </td>
         </tr>
-
+        <?php
+        // Afficher le message d'erreur s'il y a un paramètre d'erreur dans l'URL
+        if (isset($_GET['error']) && $_GET['error'] == 'notfound') {
+            echo '<p style="color: red; text-align: center;">Étudiant non trouvé avec ce numéro.</p>';
+        }
+        ?>
         <fieldset>
             <div class="form-field">
                 <input name="code" required type="text" placeholder="Numero de carte (ou du certificat d'inscription)"
                     value="" class="full-width">
             </div>
-
-            <!--  <div class="form-field">
-                        <input name="mdp" type="password" required id="mdp" placeholder="Mot de passe" value=""
-                            class="full-width">
-                    </div> -->
 
             <div class="form-field">
                 <button type="submit" class="full-width btn--primary">Confirm identity</button>
@@ -34,7 +34,7 @@ include('head.php');
         </fieldset>
     </form>
 
-
-    <?php
+</div>
+<?php
 include('footer.php');
 ?>
